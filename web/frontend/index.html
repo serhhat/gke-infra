@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enuygun Frontend</title>
+</head>
+<body>
+  <h1>Enuygun Case Study</h1>
+  <button onclick="fetchMessage()">Fetch data from the API</button>
+  <p id="message"></p>
+
+  <script>
+    async function fetchMessage() {
+      try {
+        const response = await fetch('https://api.serhatsari.dev/api');
+        const data = await response.json();
+        document.getElementById('message').innerText = data.message;
+      } catch (error) {
+        console.error('Error fetching message:', error);
+        document.getElementById('message').innerText = "Error contacting API.";
+      }
+    }
+  </script>
+</body>
+</html>
