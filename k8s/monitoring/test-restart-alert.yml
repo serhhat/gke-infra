@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: restart-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: restart-app
+  template:
+    metadata:
+      labels:
+        app: restart-app
+    spec:
+      containers:
+      - name: restart-container
+        image: busybox
+        command: ["sh", "-c", "echo 'Restarting'; sleep 1; exit 1"]
+        resources:
+          limits:
+            memory: "64Mi"
+            cpu: "250m"
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
+      restartPolicy: Always
