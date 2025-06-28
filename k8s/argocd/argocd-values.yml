@@ -1,0 +1,8 @@
+configs:
+  secret:
+    argocdServerAdminPassword: "<hashed_pass>
+  params:
+    server.insecure: "true"
+server:
+  ingress:
+    enabled: false 
