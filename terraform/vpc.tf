@@ -22,6 +22,8 @@ resource "google_compute_subnetwork" "subnet" {
   }
 }
 
+
+// I thought of using a static IP for Istio Ingress Gateway
 resource "google_compute_address" "istio_ingress_ip" {
   name         = "istio-ingress-ip"
   region       = var.region
