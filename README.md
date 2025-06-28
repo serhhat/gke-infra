@@ -54,7 +54,7 @@ cd k8s/argocd
 # Update the password in the install script.     
 ./install.sh
 # Update the argocd-values file with the newly created password
-helm install argocd argo/argo-cd -n argocd -f argocd-values.yml. 
+helm install argocd argo/argo-cd -n argocd -f argocd-values.yml  
 ```
 
 ### 5. Deploy the Applications
