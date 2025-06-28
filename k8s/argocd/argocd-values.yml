@@ -1,6 +1,6 @@
 configs:
   secret:
-    argocdServerAdminPassword: "<hashed_pass>
+    argocdServerAdminPassword: "<hashed_pass>"
   params:
     server.insecure: "true"
 server:
