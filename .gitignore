@@ -28,6 +28,8 @@ build/
 # Kubernetes
 kubeconfig
 
+api_token
+
 # OS specific files
 .DS_Store
 .DS_Store?
