@@ -5,5 +5,5 @@ grafana:
     port: 80
   ingress:
     enabled: false 
-  adminPassword: "AdM*N@ge123"
+  adminPassword: "<grafana_pass>"
 
