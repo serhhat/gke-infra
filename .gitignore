@@ -28,7 +28,7 @@ build/
 # Kubernetes
 kubeconfig
 
-api_token
+pass
 
 # OS specific files
 .DS_Store
