@@ -2,4 +2,8 @@
 
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/latest/download/cert-manager.yaml
 
-kubectl apply -f cloudflare-api-token-secret.yaml
+kubectl apply -f cloudflare-api-token-secret.yml
+
+kubectl apply -f cluster-issuer.yml
+
+kubectl apply -f certificate.yml
